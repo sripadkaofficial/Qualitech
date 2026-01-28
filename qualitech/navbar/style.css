@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #007bff; /* Primary Blue */
+    text-align: center;
+}
+
+/* --- Header and Navigation --- */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #007bff;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-small {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    background-color: #28a745; /* Secondary Green */
+}
+
+.btn-small:hover {
+    background-color: #1e7e34;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1600x600?text=Water+Background') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* --- Products Section --- */
+.products {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    color: #0056b3;
+    margin-top: 0;
+}
+
+.price {
+    display: block;
+    font-size: 1.4em;
+    color: #dc3545; /* Red for Price */
+    margin: 10px 0 15px;
+    font-weight: bold;
+}
+
+/* --- Technology Section --- */
+.technology {
+    background-color: #e9f7ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tech-content {
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.tech-content li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 5px solid #007bff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Contact Section --- */
+.contact {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #a0c4ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

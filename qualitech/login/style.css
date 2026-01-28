@@ -1,0 +1,157 @@
+/* --- Global Styles & Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; /* Light gray background for the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+a {
+    text-decoration: initial;
+    color: inherit;
+}
+
+/* --- Layout Container --- */
+.login-page-wrapper {
+    width: 100%;
+    max-width: 400px; /* Max width for the login card */
+}
+
+/* --- Login Card Styling --- */
+.login-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* --- Header Styles --- */
+.login-header {
+    margin-bottom: 30px;
+}
+
+.logo-link {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.logo-login {
+    font-size: 28px;
+    font-weight: 700;
+    color: #007bff; /* Primary brand color (blue) */
+}
+
+.login-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* --- Form Styles --- */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* --- Options Row (Forgot Password) --- */
+.options-row {
+    text-align: right;
+    margin-top: -10px; /* Pulls the link closer to the input field */
+}
+
+.forgot-link {
+    font-size: 14px;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.forgot-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* --- Submit Button --- */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-top: 10px; /* Space after the options-row */
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* --- Signup Footer --- */
+.signup-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #777;
+}
+
+.signup-link {
+    color: #007bff;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.signup-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
